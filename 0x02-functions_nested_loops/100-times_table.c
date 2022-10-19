@@ -1,10 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
- * print_times_table - Entry point
- * @n: input
+ * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
-void print_times_table(int n)
+int main(void)
 {
 
 	return (0);
