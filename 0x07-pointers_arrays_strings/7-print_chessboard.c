@@ -1,23 +1,25 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_chessboard - prints a chessboard
- * @a: matrix
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_chessboard - prints the chessboard
+ * @a: the board to print
  */
+
 void print_chessboard(char (*a)[8])
 {
-	int i, j, size;
+	int i, j;
 
-	size = 8;
-	for (i = 0; i < size; i++)
+	i = j = 0;
+	while (i < 8)
 	{
-		for (j = 0; j < size; j++)
+		j = 0;
+		while (j < 8)
 		{
 			_putchar(a[i][j]);
+			j++;
 		}
 		_putchar('\n');
+		i++;
 	}
+
 }
